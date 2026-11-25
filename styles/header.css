@@ -1,7 +1,3 @@
-body{
-  margin:0;
-}
-
 .main-header{
   position: sticky; 
 	flex-direction: row;
@@ -10,8 +6,15 @@ body{
   left:0;
   background-color: #F8F7F3;
   z-index: 100;
-  border-bottom: 1px solid rgb(204, 201, 201);
-  padding-inline:12%;
+  border-bottom: 1px solid rgb(231, 230, 230);
+  padding-inline:13%;
+}
+.main-header a {
+  text-decoration: none;
+  color: #505550;
+}
+.main-header a:hover {
+  color: #344cdd;
 }
 .inner-nav{
   display:flex;
@@ -38,7 +41,7 @@ body{
   font-size:13px;
   color:#3a3a3a;
   margin-left: auto; 
-  margin-right: 52px;
+  margin-right: 20px;
 }
 .nav-contact{
   border: 1px solid rgb(193, 193, 193);
