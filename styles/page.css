@@ -15,50 +15,80 @@ body{
   gap:40px;
   padding-top:60px;
 }
-
+.hero-left p,
+.hero-left h1 {
+  margin: 0;
+}
 .hero-left{
   display:flex;
   flex-direction:column;
   justify-content:center;
-  /* height:750px; */
   background-color: blueviolet;
-  gap:0;
+  gap:20px;
 }
 .top-line{
   font-family: "Instrument Sans", sans-serif;
-  font-size:8px;
+  font-size:10px;
   font-weight:500;
   letter-spacing:.14em;
-  line-height:15px;
-}
+  line-height:1.7;
+  letter-spacing: .14em;
+  display:flex;
+  align-items:center;
+  gap:15px;
 
+
+}
+.top-line::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 2px;
+  background-color: #344cdd;
+}
+.hero-left .top-line {
+  margin-bottom: 30px;
+}
 .hero-top-text{
   font-family: "EB Garamond", serif;
   font-size: 23px; 
 }
+
 .hero-text{
   font-family: "Archivo", sans-serif;
-  font-size: 72px;
+  font-size: 75px;
   font-weight: 800;
-  width:600px;
+  max-width:600px;
 }
 .hero-text-sub{
   color:blue;
 }
 .hero-subtext{
   font-size:23px;
-  width:600px;
+  max-width:600px;
   line-height:30px;
 }
 .hero-tagline{
+  display:flex;
   font-family: "Instrument Sans", sans-serif;
+  align-items:center;
+  gap:8px;
+
+}
+.hero-tagline::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #34734f;
+  border-radius: 50%;
 }
 
 .button-container{
   display:flex;
   flex-direction: row;
   width:100%;
-  gap:27px;
+  gap:20px;
   align-items:center;
 }
 .hero-button-one{
