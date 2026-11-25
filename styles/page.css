@@ -34,10 +34,8 @@ body{
   display:flex;
   align-items:center;
   gap:15px;
-
-
 }
-.top-line::before {
+.top-line::before{
   content: "";
   display: inline-block;
   width: 21px;
@@ -45,7 +43,7 @@ body{
   background-color: #344cdd;
 }
 .hero-left .top-line {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .hero-top-text{
   font-family: "EB Garamond", serif;
@@ -54,12 +52,14 @@ body{
 
 .hero-text{
   font-family: "Archivo", sans-serif;
-  font-size: 75px;
+  font-size: 96px;
   font-weight: 800;
-  max-width:600px;
+  line-height: 1.02;
+  letter-spacing: -.06em;
+  color: #222522;
 }
 .hero-text-sub{
-  color:blue;
+  color: #344CDD;
 }
 .hero-subtext{
   font-size:23px;
@@ -130,9 +130,10 @@ body{
 
 .potrait-image{
   width:100%;
-  max-width: 400px;
-  height:auto;
-  border-radius: 10px;
-  
+  max-width: 380px;
+  border-radius: 8px;
+  aspect-ratio: 4 / 5;
+  object-fit:cover;
+  object-position: top;
 
 }
