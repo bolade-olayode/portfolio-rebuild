@@ -26,7 +26,7 @@ body{
   gap:20px;
 }
 .top-line{
-  font-family: "Instrument Sans", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   font-size:10px;
   font-weight:500;
   letter-spacing:.14em;
@@ -47,7 +47,7 @@ body{
 }
 .hero-top-text{
   font-family: "EB Garamond", serif;
-  font-size: 23px; 
+  font-size: 26px; 
 }
 
 .hero-text{
@@ -63,15 +63,18 @@ body{
 }
 .hero-subtext{
   font-size:23px;
-  max-width:600px;
-  line-height:30px;
-  color:rgb(94, 93, 93);
+  max-width:510px;
+  line-height:1.5;
+  color: #505550;
+  font-family: "EB Garamond", serif;
 }
 .hero-tagline{
   display:flex;
   font-family: "Instrument Sans", sans-serif;
+  font-size:14px;
   align-items:center;
   gap:8px;
+  color: #505550;
 
 }
 .hero-tagline::before {
@@ -93,22 +96,44 @@ body{
 .hero-button-one{
   font-family: "EB Garamond", serif;
   font-size: 16px; 
-  background-color: blue;
+  background-color: #344CDD;
   color:white;
   padding: 14px 20px;
   border-radius:4px;
   font-weight:500;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  gap:30px;
 }
+
+.hero-button-one::after{
+  content: "↓";
+}
+
+.hero-button-two::after{
+  content: "↗";
+}
+
+.hero-button-three::after{
+  content: "↗";
+}
+
+
 
 .hero-button-two{
   font-family: "EB Garamond", serif;
   font-size: 16px; 
   background-color: transparent;
-  color:black;
+  color: #222522;
   padding: 14px 20px;
   border-radius:4px;
   font-weight:500;
   border:1px solid black;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  gap:30px;
 }
 .hero-button-three{
   font-family: "EB Garamond", serif;
@@ -118,13 +143,18 @@ body{
   padding: 14px 20px;
   border-radius:4px;
   font-weight:500;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  gap:10px;
 
 }
 
 .hero-right{
   display:flex;
   align-items: center;
-  justify-content:center;
+  justify-content:right;
+
 }
 
 
