@@ -4,31 +4,92 @@ body{
   background-image:
     linear-gradient(rgba(34, 37, 34, 0.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(34, 37, 34, 0.045) 1px, transparent 1px);
-  background-size: 10px 10px;
+  background-size: 56px 56px;
   background-position: center top;
 }
 
 .hero{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.95fr 1fr;
   padding-inline: 13%;
-  min-height:750px;
+  gap:40px;
+  padding-top:60px;
 }
 
 .hero-left{
   display:flex;
   flex-direction:column;
+  justify-content:center;
+  /* height:750px; */
   background-color: blueviolet;
+  gap:0;
 }
-.text-content-left{
-}
-
 .top-line{
   font-family: "Instrument Sans", sans-serif;
   font-size:8px;
   font-weight:500;
   letter-spacing:.14em;
-  line-height:1.7;
+  line-height:15px;
+}
+
+.hero-top-text{
+  font-family: "EB Garamond", serif;
+  font-size: 23px; 
+}
+.hero-text{
+  font-family: "Archivo", sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  width:600px;
+}
+.hero-text-sub{
+  color:blue;
+}
+.hero-subtext{
+  font-size:23px;
+  width:600px;
+  line-height:30px;
+}
+.hero-tagline{
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.button-container{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  gap:27px;
+  align-items:center;
+}
+.hero-button-one{
+  font-family: "EB Garamond", serif;
+  font-size: 16px; 
+  background-color: blue;
+  color:white;
+  padding: 14px 20px;
+  border-radius:4px;
+  font-weight:500;
+}
+
+.hero-button-two{
+  font-family: "EB Garamond", serif;
+  font-size: 16px; 
+  background-color: transparent;
+  color:black;
+  padding: 14px 20px;
+  border-radius:4px;
+  font-weight:500;
+  border:1px solid black;
+}
+.hero-button-three{
+  font-family: "EB Garamond", serif;
+  font-size: 16px; 
+  background-color: transparent;
+  color:black;
+  padding: 14px 20px;
+  border-radius:4px;
+  font-weight:500;
+
 }
 
 .hero-right{
