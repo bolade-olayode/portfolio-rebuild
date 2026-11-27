@@ -92,6 +92,7 @@ body{
   width:100%;
   gap:20px;
   align-items:center;
+  margin-top:15px;
 }
 .hero-button-one{
   font-family: "EB Garamond", serif;
@@ -100,26 +101,37 @@ body{
   color:white;
   padding: 14px 20px;
   border-radius:4px;
-  font-weight:500;
+  font-weight:600;
   display:flex;
   align-items:center;
   justify-content: center;
   gap:30px;
+  text-decoration: none;
+  transition: background-color 200ms ease,
+              transform 200ms ease;
+}
+.hero-button-one:hover{
+  background-color: #263bc0;
+  transform: translateY(-3px);
+}
+
+.hero-button-one:focus-visible, 
+.hero-button-two:focus-visible,
+.hero-button-three:focus-visible{
+  outline: 2px solid #344cdd;
+  outline-offset: 5px;
 }
 
 .hero-button-one::after{
-  content: "↓";
-}
-
+  content: "↓";}
 .hero-button-two::after{
   content: "↗";
+  transition: transform 200ms ease;
 }
-
 .hero-button-three::after{
   content: "↗";
+  transition: transform 200ms ease;
 }
-
-
 
 .hero-button-two{
   font-family: "EB Garamond", serif;
@@ -128,36 +140,50 @@ body{
   color: #222522;
   padding: 14px 20px;
   border-radius:4px;
-  font-weight:500;
+  font-weight:600;
   border:1px solid black;
   display:flex;
   align-items:center;
   justify-content: center;
   gap:30px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+.hero-button-two:hover{
+  background-color: #f8f5ec;
+  transform: translateY(-3px);
+}
+.hero-button-two:hover::after{
+  transform: translate(3px, -3px);
 }
 .hero-button-three{
   font-family: "EB Garamond", serif;
   font-size: 16px; 
   background-color: transparent;
   color:black;
-  padding: 14px 20px;
-  border-radius:4px;
-  font-weight:500;
+  padding-bottom: 10px;
+  font-weight:600;
   display:flex;
   align-items:center;
   justify-content: center;
   gap:10px;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+.hero-button-three:hover{
+  color: blue;
+  border-bottom: 1px solid #344CDD;
+}
+.hero-button-three:hover::after{
+  transform: translate(3px, -3px);
 
 }
-
 .hero-right{
   display:flex;
   align-items: center;
   justify-content:right;
-
 }
-
-
 .potrait-image{
   width:100%;
   max-width: 380px;
@@ -165,5 +191,12 @@ body{
   aspect-ratio: 4 / 5;
   object-fit:cover;
   object-position: top;
+  margin-top:100px;
 
+}
+
+@media (max-width: 800px) {
+  .hero-text {
+    font-size: 48px;
+  }
 }
